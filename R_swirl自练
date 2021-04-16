@@ -1,0 +1,11 @@
+#匿名函数
+#Type the following command and then we'll discuss how it works:
+#evaluate(function(x){x+1}, 6)
+
+evaluate(function(x){x+1},6)
+#[1] 7
+#The first argument is a tiny anonymous function that takes one argument `x` and returns `x+1`. We passed the number 6 into this function so the entire expression evaluates to 7.
+
+#Try using evaluate() along with an anonymous function to return the first element of the
+#vector c(8, 4, 0). Your anonymous function should only take one argument which should be a variable `x`.
+evaluate(function(x){x[1]},c(8,4,0))#要记住是x[1],不是c[1]，因为此时x就是c(8,4,0)
